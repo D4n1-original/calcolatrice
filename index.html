@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="calcScreen">
+            <input type="text" id="screen">
+        </div>
+        <div id="calcControls">
+            <div id="calcNumbers">
+                <button onclick="canc()">Canc</button>
+                <button onclick="back()">Back</button>
+                <button onclick="signToggle()">+/-</button>
+                <button onclick="insertNumber('7')">7</button>
+                <button onclick="insertNumber('8')">8</button>
+                <button onclick="insertNumber('9')">9</button>
+                <button onclick="insertNumber('4')">4</button>
+                <button onclick="insertNumber('5')">5</button>
+                <button onclick="insertNumber('6')">6</button>
+                <button onclick="insertNumber('1')">1</button>
+                <button onclick="insertNumber('2')">2</button>
+                <button onclick="insertNumber('3')">3</button>
+                <button id="equals" onclick="calculateResult()">=</button>
+                <button onclick="insertNumber('0')">0</button>
+            </div>
+            <div id="calcSimple">
+                <button onclick="insertOperator('+')">+</button>
+                <button onclick="insertOperator('-')">-</button>
+                <button onclick="insertOperator('*')">&times;</button>
+                <button onclick="insertOperator('/')">&divide;</button>
+                <button onclick="insertNumber('.')">.</button>
+            </div>
+            <div id="calcAdvanced">
+                <button onclick="insertNumber('(')">(</button>
+                <button onclick="insertNumber(')')">)</button>
+                <button onclick="insertOperator('%')">%</button>
+                <button onclick="radice()">&radic;</button>
+                <button onclick="quadrato()">x&sup2;</button>
+            </div>
+
+        </div>
+        <div id="cronologia">
+            <h2>Cronologia</h2>
+            <ul id="cList"></ul>
+            <button id="rButton" onclick="resetList()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
